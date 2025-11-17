@@ -4,6 +4,8 @@ from datetime import datetime
 import time, random
 
 app = Flask(__name__)
+from flask_cors import CORS
+CORS(app)
 
 # In-memory cache: { keyword: { data, last_update } }
 cache = {}
